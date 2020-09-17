@@ -1,3 +1,4 @@
+import unittest
 """
 Question:
 Given two strings t and s determine if they are anagrams of each other.
@@ -64,7 +65,9 @@ def mergeSort(arr):
         mergeSort(L)
         mergeSort(R)
 
-        i = j = k = 0
+        i = 0
+        j = 0
+        k = 0
 
         while i < len(L) and j < len(R):
             if L[i] < R[j]:
@@ -84,3 +87,20 @@ def mergeSort(arr):
             arr[k] = R[j]
             j+= 1
             k+= 1
+
+class Tests(unittest.TestCase):
+    def setUp(self):
+        pass
+
+    def test0(self):
+        self.assertEqual(False, are_anagrams("1", "bruh"))
+
+    def test1(self):
+        self.assertEqual(True, are_anagrams("angered", "enraged"))
+
+    def test2(self):
+        self.assertEqual(False, are_anagrams("salad", "dallas"))
+
+
+if __name__ == "__main__":
+    unittest.main()
