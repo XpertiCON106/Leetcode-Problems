@@ -1,5 +1,9 @@
 import java.util.Hashtable;
 /*
+Given a string, find the length of the longest substring without repeating characters.
+*Note that the answer must be a substring (e.g. "abcd" is a subsequence of “abbbcccd”, not a substring).
+
+/*
 For this problem, I employed a hashtable.
 Basically go through the characters of the entire string and put them in the hashtable.
 Also keep track of how many characters we are putting in.
@@ -12,7 +16,7 @@ only once and since we are using a hashtable, our containsKey() methods runtime 
 So overall runtime of the program is O(n).
 
 One issue I was having was not including the next character that’s found on the hash table.
-I fixed this by immediately putting the next character that was already in the hash into the new hash table.  
+I fixed this by immediately putting the next character that was already in the hash into the new hash table.
 
 */
 public class longestSubstring {

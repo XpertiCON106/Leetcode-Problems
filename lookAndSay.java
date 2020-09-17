@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/*
+Question:
+Given an array of integers, procure its Look-and-Say Sequence.
+A Look-and-Say Sequence is how you would describe the array out loud, saying how many of each value appears.
+*/
 public class Look_and_Say {
 
 	public static void main(String[] args) {
