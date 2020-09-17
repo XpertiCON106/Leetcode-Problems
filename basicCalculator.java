@@ -1,6 +1,17 @@
 import java.util.LinkedList;
 import java.util.Queue;
+/*
+So for this problem I decided to employ a queue.
+Basically, I have two queues; one for the numbers and the one for the operations.
+In the first part, I fill out the respective queues.
+Then, I have a while loop that goes through the operations one by one in the queue and gets 2 numbers to do the operations with.
+I have one number, num1, that I change throughout the operation.
+Once we have no more operation to do, we know we have the answer which has been changing throughout, so I return that.
 
+One issue I had was not adding in the last integer in the string input. I fixed this by adding the last character that my string collects. This makes sure we are adding the last integer from our input.
+
+I have one for loop that goes through the input once. I have another loop that goes through the operations queue once. So, overall runtime is linear, O(n).
+*/
 public class basicCalculator {
 	public static void main(String[] args) {
 		String cal1 = "1+1";
