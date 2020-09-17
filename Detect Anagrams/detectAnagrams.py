@@ -12,6 +12,7 @@ Examples:
 """
 def are_anagrams(t,s):
     if len(t) != len(s):
+        print("Not an anagram")
         return false
 
 
