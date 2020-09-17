@@ -1,5 +1,20 @@
 import java.util.Hashtable;
+/*
+For this problem, I employed a hashtable.
+Basically go through the characters of the entire string and put them in the hashtable.
+Also keep track of how many characters we are putting in.
+As soon as the next character is already in the hash,
+we clear the hash, decided if the current length is smaller or bigger than
+the previous length and change accordingly. And then we reset the current length
+and continue with the string. This makes sure we are going through the entire array
+only once and since we are using a hashtable, our containsKey() methods runtime is O(1).
 
+So overall runtime of the program is O(n).
+
+One issue I was having was not including the next character that’s found on the hash table.
+I fixed this by immediately putting the next character that was already in the hash into the new hash table.  
+
+*/
 public class longestSubstring {
 
 	public static void main(String[] args) {
