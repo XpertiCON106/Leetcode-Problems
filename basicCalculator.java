@@ -8,9 +8,13 @@ Then, I have a while loop that goes through the operations one by one in the que
 I have one number, num1, that I change throughout the operation.
 Once we have no more operation to do, we know we have the answer which has been changing throughout, so I return that.
 
-One issue I had was not adding in the last integer in the string input. I fixed this by adding the last character that my string collects. This makes sure we are adding the last integer from our input.
+One issue I had was not adding in the last integer in the string input.
+I fixed this by adding the last character that my string collects.
+This makes sure we are adding the last integer from our input.
 
-I have one for loop that goes through the input once. I have another loop that goes through the operations queue once. So, overall runtime is linear, O(n).
+I have one for loop that goes through the input once.
+I have another loop that goes through the operations queue once.
+So, overall runtime is linear, O(n).
 */
 public class basicCalculator {
 	public static void main(String[] args) {
