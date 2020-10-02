@@ -61,7 +61,21 @@ class PublicTests(unittest.TestCase):
             self.assertEqual(val, head.data)
             head = head.next
         self.assertEqual(None, head)
-        
+
+    def test5(self):
+        head = Node(1)
+        curr = head
+        for i in range (2,4):
+            curr.next = Node(i)
+            curr = curr.next
+
+        head = rotate_list(head, 1)
+        ans = [2,3,1]
+        for val in ans:
+            self.assertEqual(val, head.data)
+            head = head.next
+        self.assertEqual(None, head)
+
 
 if __name__ == "__main__":
     unittest.main()
