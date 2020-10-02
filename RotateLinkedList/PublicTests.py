@@ -69,8 +69,9 @@ class PublicTests(unittest.TestCase):
             curr.next = Node(i)
             curr = curr.next
 
-        head = rotate_list(head, 1)
-        ans = [2,3,1]
+        head = Node(1)
+        head = rotate_list(head, 2)
+        ans = [1]
         for val in ans:
             self.assertEqual(val, head.data)
             head = head.next
