@@ -87,3 +87,24 @@ public class Admin {
 	public void towCar(Car c) {
 	}
 }
+
+
+// compact spot IS-A regular spot but for compact cars
+public class CompactSpot extends RegularSpot {
+	// type is set type to "ANY"
+	// isOccupied will be used to check whether the spot is taken
+	private Spot type;
+	private boolean isOccupied;
+
+	// constructor
+	// when declaring type, we will use the SPOT enum
+	public CompactSpot() {
+		this.type = Spot.COMPACT;
+		this.isOccupied = false;
+	}
+
+	// this will be used to check whether the car can park
+	public boolean checkCar(Car c) {
+		return false;
+	}
+}
