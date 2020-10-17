@@ -27,7 +27,7 @@ public class Car {
 	// car has two variables license and type.
 	// license will be used to see if the car is allowed to park in the parking lot
 	// type will be used to determine where the car can park.
-	
+
 	private int license;
 	private String type;
 
@@ -52,5 +52,38 @@ public class Car {
 
 	// will be used to exit a parking spot and eventually out of the parking lot
 	public void unPark() {
+	}
+}
+
+
+import java.util.ArrayList;
+
+public class Admin {
+
+	// admin has two variables
+	// an arraylist of registeredCars that will store all the cars that
+	// are registered within the system.
+	// capacity, which will determine the max number of cars
+	// that can be registered.
+	private ArrayList<Car> registeredCar;
+	private int capacity;
+
+	// constructor
+	public Admin(int capacity) {
+		this.capacity = capacity;
+		this.registeredCar = new ArrayList<Car>();
+	}
+
+	// will be used to register a car, making sure capacity is not exceeded
+	public void register(Car c) {
+	}
+
+	// will be used to make valid cars parked in the parking lot
+	public boolean checkRegistration(Car c) {
+		return false;
+	}
+
+	// if a car is parked and not registered, tow em!
+	public void towCar(Car c) {
 	}
 }
