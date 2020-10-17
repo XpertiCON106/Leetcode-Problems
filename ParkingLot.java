@@ -108,3 +108,34 @@ public class CompactSpot extends RegularSpot {
 		return false;
 	}
 }
+
+// this enum will be used to classify parking spot type.
+// will be used
+public enum Spot {
+	LARGE, DISABLE, EMERGENCY, SPECIAL, RESERVED, COMPACT, REGULAR
+}
+
+
+// regular spot is parking lot spot that can hold any car
+public class RegularSpot {
+
+	// type is set type to "ANY"
+	// isOccupied will be used to check whether the spot is taken
+	private Spot type;
+	private boolean isOccupied;
+
+	// constructor
+	// when declaring type, we will use the SPOT enum
+	public RegularSpot() {
+		this.type = type.REGULAR;
+		this.isOccupied = false;
+	}
+
+	// will be used to fill the spot
+	public void fill() {
+	}
+
+	// will be used to unfill the spot
+	public void unFill() {
+	}
+}
