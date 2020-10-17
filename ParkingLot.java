@@ -1,3 +1,19 @@
+/*
+Some clarifying questions.
+
+1) Are we going to have some kind of payment system?
+  - if so then we will need to implement some kind of variable within either
+    the Admin class or the ParkingLot class that will check how long a car
+    has been parked.
+2) Is the parking lot only for Cars? i.e. can we have other types of vehicle?
+  - if so then we will need to create a vehicle class. And all other types of
+    vehicles like car, trucks, motorcylce, etc. will extend this class.
+3) Can we add additional parking spots?
+  - if so, then in the parking lot class, we will need to treat the grid as an
+    2D arraylist. 
+*/
+
+
 // this is the actual parking lot.
 // we will use a 2D array of RegularSpot to represent the parking lot
 public class ParkingLot {
